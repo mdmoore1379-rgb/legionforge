@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LegionForge — AI operations, configured like a Tesla</title>
+  <meta name="description" content="Pick a pack. Live in 14 days. Fixed price. No custom SOW. 10 humans, the rest is agents." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="/">LEGIONFORGE</a>
+    <nav>
+      <a href="#packs">Packs</a>
+      <a href="#how">14 days</a>
+      <a href="/configure.html" class="btn btn-sm">Configure</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <p class="eyebrow">10 people. Public menu. 14-day clock.</p>
+    <h1>AI operations for SMBs.<br />Configured, not consulted.</h1>
+    <p class="lede">Pick a pack. Connect email, CRM, and phone. Agents go live in 14 days at a published price. If we miss the clock, the pack is broken — not your problem to staff.</p>
+    <div class="cta-row">
+      <a class="btn" href="/configure.html">Build your stack</a>
+      <a class="btn btn-ghost" href="#packs">See prices</a>
+    </div>
+    <p class="fine">No scoping call. No custom SOW. No 40-person services bench.</p>
+  </section>
+  <section id="packs" class="section">
+    <div class="section-head">
+      <p class="eyebrow">The only product</p>
+      <h2>Eight packs. That is the company.</h2>
+    </div>
+    <div class="grid packs" id="pack-grid"></div>
+  </section>
+  <section id="how" class="section alt">
+    <div class="section-head">
+      <p class="eyebrow">Implementation</p>
+      <h2>Live in 14 days or the pack is dead.</h2>
+    </div>
+    <ol class="timeline">
+      <li><span>Day 0</span> Configurator. You pick the pack and stack.</li>
+      <li><span>Day 1</span> Connect email, CRM, phone.</li>
+      <li><span>Day 2–4</span> Agents dry-run on your last 30 days of real work.</li>
+      <li><span>Day 5</span> Human QA of 20 samples.</li>
+      <li><span>Day 6–10</span> Live with a human in the loop.</li>
+      <li><span>Day 11–13</span> Loop comes off.</li>
+      <li><span>Day 14</span> Invoice starts. You are live.</li>
+    </ol>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <p class="eyebrow">Rules on the wall</p>
+      <h2>This is how a 10-person company reaches $1B.</h2>
+    </div>
+    <div class="grid rules">
+      <article><h3>Headcount cap</h3><p>10 W-2. Seat 11 is illegal until $25M ARR.</p></article>
+      <article><h3>Menu cap</h3><p>If it is not a pack, we do not sell it.</p></article>
+      <article><h3>Clock cap</h3><p>Implementation over 14 days is a product bug.</p></article>
+      <article><h3>Margin cap</h3><p>Kill any pack under 70% gross margin.</p></article>
+    </div>
+    <div class="cta-row">
+      <a class="btn" href="/configure.html">Start the 14-day clock</a>
+    </div>
+  </section>
+  <footer>
+    <span>LegionForge</span>
+    <span>Fixed-scope AI operations</span>
+    <a href="mailto:start@legionforge.ai">start@legionforge.ai</a>
+  </footer>
+  <script src="/app.js"></script>
+  <script>renderPackGrid();</script>
+</body>
+</html>

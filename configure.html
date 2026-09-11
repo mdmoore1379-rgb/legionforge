@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Configure LegionForge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="/">LEGIONFORGE</a>
+    <nav>
+      <a href="/#packs">Packs</a>
+      <a href="/" class="btn btn-sm btn-ghost">Home</a>
+    </nav>
+  </header>
+  <section class="hero" style="padding-bottom:12px">
+    <p class="eyebrow">Configurator</p>
+    <h1>Pick the packs. Start the 14-day clock.</h1>
+    <p class="lede">Price is on the page. No scoping call.</p>
+  </section>
+  <div class="config">
+    <div><div class="grid packs" id="config-packs"></div></div>
+    <aside class="panel summary">
+      <h2>Your stack</h2>
+      <div class="line"><span>Packs</span><strong id="sum-packs">None</strong></div>
+      <div class="line"><span>Monthly</span><strong id="sum-month">$0</strong></div>
+      <div class="line"><span>ACV</span><strong id="sum-year">$0</strong></div>
+      <div class="line"><span>Go-live</span><strong id="sum-clock">Pick a pack</strong></div>
+      <form id="lead-form">
+        <div class="field"><label>Name</label><input name="name" required /></div>
+        <div class="field"><label>Work email</label><input name="email" type="email" required /></div>
+        <div class="field"><label>Company</label><input name="company" required /></div>
+        <div class="field"><label>Employees</label>
+          <select name="employees">
+            <option>1–10</option><option>11–50</option><option selected>51–200</option><option>201–500</option>
+          </select>
+        </div>
+        <div class="field"><label>Stack (CRM / PSA / email)</label><input name="stack" placeholder="ConnectWise, HubSpot, M365…" /></div>
+        <button class="btn" type="submit">Start 14-day standup</button>
+        <p id="form-status"></p>
+      </form>
+    </aside>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
